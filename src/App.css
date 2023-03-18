@@ -1,38 +1,106 @@
-.App {
-  text-align: center;
+.app{
+  background-color: #ece6dd;
+  background-color:  #A45C40;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+::-webkit-scrollbar {
+  display: none;
+}
+.sign_up{
+  display: flex;
+  
+  background: url("C:\Users\lenovo\OneDrive\Desktop\ZIggu's pintrest app\my-app\src\Photos\first page.png");
+/* border: 2px black solid; */
+ height: 100vh;
+ align-items: center;
+/* background-color: #FAB333; */
+font-family: 'Gotham Narrow SSm A' , 'Gotham Narrow SSm B', sans-serif;
+background-repeat: no-repeat;
+background-size: cover;
+
+
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#right{
+  width: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+.login_btn{
+  background-color: black;
   color: white;
+  width: 20%;
+     border-radius: 0.5rem;
+     padding: 1rem 0;
+     border: none;
 }
+.login_btn:hover{
+  background-color: rgb(180, 180, 180);
+  color: rgb(0, 0, 0);
+  transition-duration: 0.4s;
 
-.App-link {
-  color: #61dafb;
 }
+.image_grid{
+  margin-top: 20rem ;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap:5rem;
+  padding: 0rem 10rem;
+}
+.img_wrap{
+  overflow: hidden;
+  height: 0;
+  padding: 50% 0;
+  position: relative;
+  /* background: #f3f3f3; */
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.img_wrap img{
+  min-width: 100%;
+  min-height: 100%;
+
+  max-width: 150%;
+  position: absolute;
+  top: 0;
+  left: 0rem;
+  /* margin-right: 3rem; */
+  
+  /* display: inline; */
+}
+input[type="file"] {
+  display: none;
+}
+#icon{
+  font-size: 2.2rem;
+}
+#upload{
+  /* background-color: #FAB333; */
+  color: #ece6dd;
+}
+.dashboard{
+  background-color: #F6EEE0;
+color: #7B583D;
+display: flex;
+justify-content: space-around;
+font-size: 2.5rem;
+padding: 4rem;
+}
+.dashboard a{
+  cursor: pointer;
+}
+#profile_image{
+  border-radius: 50%;
+  transform: scale(0.5);
+  border: none;
+  display: inline;
+}
+#icon{
+  font-size: 6.2rem;
+  position: absolute;
+  left:65rem;
 }
